@@ -6,6 +6,7 @@ optimizer_runs = 100000
 evm_version = "cancun"
 bytecode_hash = "none"
 cbor_metadata = false
+fs_permissions = [{ access = "read-write", path = "./src/generated"}]
 libs = ["dependencies"]
 remappings = [
     "@openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.6.1/",
@@ -40,3 +41,17 @@ rain-tofu-erc20-decimals = "0.1.1"
 
 [soldeer]
 recursive_deps = false
+
+[rpc_endpoints]
+arbitrum = "${ARBITRUM_RPC_URL}"
+base = "${BASE_RPC_URL}"
+base_sepolia = "${BASE_SEPOLIA_RPC_URL}"
+flare = "${FLARE_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
+
+[etherscan]
+arbitrum = { key = "${CI_DEPLOY_ARBITRUM_ETHERSCAN_API_KEY}" }
+base = { key = "${CI_DEPLOY_BASE_ETHERSCAN_API_KEY}" }
+base_sepolia = { key = "${CI_DEPLOY_BASE_SEPOLIA_ETHERSCAN_API_KEY}" }
+flare = { key = "${CI_DEPLOY_FLARE_ETHERSCAN_API_KEY}" }
+polygon = { key = "${CI_DEPLOY_POLYGON_ETHERSCAN_API_KEY}" }
