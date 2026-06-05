@@ -2,6 +2,6 @@
 // SPDX-FileCopyrightText: Copyright (c) 2020 Rain Open Source Software Ltd
 pragma solidity =0.8.25;
 
-import {Receipt} from "ethgild/concrete/receipt/Receipt.sol";
+import {Receipt} from "rain-vats-0.1.6/src/concrete/receipt/Receipt.sol";
 
 contract DvinReceipt is Receipt {}
