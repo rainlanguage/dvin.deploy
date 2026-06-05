@@ -2,12 +2,12 @@
 // SPDX-FileCopyrightText: Copyright (c) 2020 Rain Open Source Software Ltd
 pragma solidity =0.8.25;
 
-import {Script} from "forge-std/Script.sol";
+import {Script} from "forge-std-1.16.1/src/Script.sol";
 
 import {
     OffchainAssetReceiptVaultBeaconSetDeployer,
     OffchainAssetReceiptVaultBeaconSetDeployerConfig
-} from "ethgild/concrete/deploy/OffchainAssetReceiptVaultBeaconSetDeployer.sol";
+} from "rain-vats-0.1.6/src/concrete/deploy/OffchainAssetReceiptVaultBeaconSetDeployer.sol";
 import {LibProdDeploy} from "src/lib/LibProdDeploy.sol";
 import {DvinReceipt} from "src/concrete/DvinReceipt.sol";
 import {DvinReceiptVault} from "src/concrete/DvinReceiptVault.sol";

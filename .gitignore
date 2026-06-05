@@ -1,2 +1,5 @@
-cache
 out
+cache
+dependencies
+node_modules
+.pre-commit-config.yaml
